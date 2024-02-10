@@ -8,6 +8,59 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <h1>The Ultimate Sports Quiz</h1>
+    </header>
+
+    <!--Main Page and button to start quiz-->
+    <div>
+      <div class="start-screen">
+        <p></p>
+        <button class="open-quiz">Start Quiz</button>
+      </div>
+      <!--Pop up box with quiz rules-->
+      <div class="quiz-rules">
+        <h2>Quiz Rules</h2>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+        <button class="start-quiz">Start Quiz</button>
+        <button class="exit-quiz">Exit Quiz</button>
+      </div>
+    </div>
+
+    <!--Quiz area. The header will contain a time. Section will contain question and answers. Footer will contact buttons-->
+    <div class="quiz-area">
+        <header>
+      <div class="timer">
+        <div class="time-left">Time left</div>
+        <div class="time-seconds">10</div>
+      </div>
+    </header>
+    <section>
+        <div class="questions"></div>
+        <div class="answer-options"></div>
+    </section>
+    <footer>
+<div class="question-count"></div>
+<button class="next-ques">Next Question</button>
+    </footer>
+ </div>
+
+ <!--Results pop up box-->
+    <div class="results">
+        <p>Well done you have completed the Ulitmate Sports Quiz.</p>
+        <!--This will have the users result using javascript-->
+        <div class="results-text">
+        
+        </div>
+    </div>
+
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>
