@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    background: url("../images/sport-background.jpg") no-repeat center center/cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;  
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.start-screen {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.open-quiz{
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+    width: 25%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 40px;
+}
