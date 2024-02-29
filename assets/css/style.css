@@ -126,7 +126,8 @@ p {
     border-radius: 20px;
     margin-left: 30%;
     margin-right: 30%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: none;
 }
 
 .quiz-area header {
@@ -206,4 +207,46 @@ p {
     background-color: black;
     color: whitesmoke;
     transition: 0.3s ease;
+}
+
+
+.next-ques {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    height: 25px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+.next-ques:hover {
+        background-color: black;
+        color: white;
+        transition: 0.3s;
+    }
+
+.quiz-area footer {
+    background-color: rgba(160, 160, 160, 0.859);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.current-ques {
+    margin-right: -15px;
+    margin-left: 20px;
+}
+
+footer p {
+    padding: 10px;
+    font-size: 15px;
 }
