@@ -5,6 +5,7 @@ body {
     background: url("../images/sport-background.jpg") no-repeat center center/cover;
     font-family: "play", Arial, Helvetica, sans-serif;
     color: black;
+    min-height: 100vh;
 }
 
 h1 {
@@ -130,6 +131,9 @@ p {
     display: none;
 }
 
+.quiz-area.active {
+    display: inline-block;
+}
 .quiz-area header {
     background-color: rgba(160, 160, 160, 0.859);
     padding-left: 5%;
@@ -145,6 +149,7 @@ p {
     border-top-right-radius: 20px;
 }
 
+/* Quiz area timer stylings */
 .timer {
     justify-content: space-between;
     align-items: center;
@@ -177,6 +182,7 @@ p {
     width: 40px;
 }
 
+/* Quiz area question and answer section styling*/
 .questions {
     padding: 25px 10px 20px 25px;
     text-align: center;
@@ -209,7 +215,7 @@ p {
     transition: 0.3s ease;
 }
 
-
+/* Quiz area footer stylings */
 .next-ques {
     background-color: whitesmoke;
     border-radius: 10px;
@@ -249,4 +255,19 @@ p {
 footer p {
     padding: 10px;
     font-size: 15px;
+}
+
+/* Results box styling */
+.results {
+    width: 30%;
+    background-color: white;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.results footer {
+    background-color: rgba(202, 202, 202, 0.922);
+    display: flex;
 }
