@@ -129,8 +129,8 @@ p {
 }
 
 .quiz-area header {
-    background-color: grey;
-    padding-left: 20%;
+    background-color: rgba(160, 160, 160, 0.859);
+    padding-left: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -139,6 +139,8 @@ p {
     color: white;
     font-size: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .timer {
@@ -146,7 +148,7 @@ p {
     align-items: center;
     display: flex;
     background-color: whitesmoke;
-    margin-right: 10%;
+    margin-right: 5%;
     color: black;
     border-radius: 5px;
     width: 150px;
@@ -162,7 +164,18 @@ p {
 }
 
 .time-seconds {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
-    padding-right: 2px;
+    padding-right: 5px;
+    background-color: rgba(106, 106, 106, 0.834) ;
+    color: white;
+    margin-right: 3px;
+    border-radius: 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.questions {
+    padding: 25px 10px 20px 25px;
+    text-align: center;
 }
