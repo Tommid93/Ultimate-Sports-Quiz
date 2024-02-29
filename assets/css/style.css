@@ -10,7 +10,7 @@ body {
 h1 {
     text-align: center;
     color: white;
-    font-size: 75px;
+    font-size: 50px;
 }
 
 p {
@@ -121,9 +121,48 @@ p {
 
 /* Quiz Area Styling */
 .quiz-area {
-    width: 75%;
+    width: 60%;
     background-color: white;
-    border-radius: 30px;
-    margin-left: 10%;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.quiz-area header {
+    background-color: grey;
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.timer {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: whitesmoke;
     margin-right: 10%;
+    color: black;
+    border-radius: 5px;
+    width: 150px;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.time-left {
+    font-size: 17px;
+    font-weight: 400;
+    padding-left:2px;
+}
+
+.time-seconds {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 2px;
 }
