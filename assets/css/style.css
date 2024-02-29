@@ -121,11 +121,12 @@ p {
 
 /* Quiz Area Styling */
 .quiz-area {
-    width: 60%;
+    width: 40%;
     background-color: white;
     border-radius: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 
 .quiz-area header {
@@ -178,4 +179,31 @@ p {
 .questions {
     padding: 25px 10px 20px 25px;
     text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.answer-options {
+    padding: 25px 10px 20px 25px;
+    display: block;
+}
+
+.option {
+    background-color: rgba(202, 202, 202, 0.922);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s ease;
 }
