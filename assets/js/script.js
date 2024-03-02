@@ -22,4 +22,14 @@ exitQuizBtn.onclick = ()=> {
 startQuizBtn.onclick = ()=> {
     quizArea.classList.add('active');
     quizRules.classList.remove('active');
+    showQuestions(0);
+}
+
+let que_count = 0;
+
+/* Function to get questions from array */
+function showQuestions(index){
+    const que_text = document.querySelector(".questions");
+    let que_tag = '<span>'+ questions[index].question;
+    que_text.innerHTML = que_tag;
 }
