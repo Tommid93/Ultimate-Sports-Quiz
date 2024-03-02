@@ -11,20 +11,15 @@ body {
 h1 {
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
 }
 
-p {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-}
 
 /* Start Screen styling */
 .start-screen {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 5%;
     text-align: center;
     border-radius: 20px;
@@ -32,6 +27,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 25px;
 }
 
 .start-screen.active {
@@ -42,12 +38,13 @@ p {
     background-color: white;
     color: black;
     border-radius: 20px;
-    width: 25%;
+    width: 200px;
     margin-bottom: 5%;
     margin-top: 5%;
-    height: 40px;
+    height: 50px;
     border-color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .open-quiz:hover {
@@ -58,12 +55,10 @@ p {
 
 /* Quiz rules section stylings*/
 .quiz-rules {
-    width: 40%;
+    width: 80%;
     background-color: white;
     border-radius: 25px;
     flex-direction: column;
-    margin-right: 30%;
-    margin-left: 30%;
     margin-top: -10%;
     display: flex;
     display: none;
@@ -72,8 +67,8 @@ p {
 .quiz-rules.active {
     display: flex;
     pointer-events: auto;
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: 10%;
+    margin-left: 10%;
     margin-top: 5%;
 }
 
@@ -83,15 +78,14 @@ p {
 
 .button-align {
     display: inline-block;
-    padding-left: 90px;
+    padding-left: 40px;
     
 }
 .start-quiz {
     background-color: white;
     color: black;
-    width: 30%;
+    width: 100px;
     border-radius: 20px;
-    margin-left: 20px;
     margin-bottom: 10px;
     margin-right: 10px;
     height: 30px;
@@ -100,10 +94,9 @@ p {
 .exit-quiz {
     background-color: white;
     color: black;
-    width: 30%;
+    width: 100px;
     border-radius: 20px;
     margin-bottom: 10px;
-    margin-right: 10px;
     height: 30px;
 }
 
@@ -122,11 +115,11 @@ p {
 
 /* Quiz Area Styling */
 .quiz-area {
-    width: 40%;
+    width: 95%;
     background-color: white;
     border-radius: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: none;
 }
@@ -141,9 +134,9 @@ p {
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    text-align: left;
+    text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -165,13 +158,13 @@ p {
 }
 
 .time-left {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     padding-left:2px;
 }
 
 .time-seconds {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     padding-right: 5px;
     background-color: rgba(106, 106, 106, 0.834) ;
@@ -224,9 +217,9 @@ p {
     height: 25px;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 150px;
     margin-top: 10px;
-    width: 150px;
+    margin-left: 60px;
+    width: 125px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
@@ -242,32 +235,36 @@ p {
     border-bottom-right-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     height: 40px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: baseline;
+    width: 100%;
 }
 
 .current-ques {
-    margin-right: -15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 footer p {
-    padding: 10px;
-    font-size: 15px;
+    padding: 5px;
+    font-size: 13px;
 }
 
 /* Results box styling */
 .results {
-    width: 30%;
+    width: 90%;
     background-color: white;
-    margin-left: 35%;
-    margin-right: 35%;
     border-radius: 20px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
-.results footer {
-    background-color: rgba(202, 202, 202, 0.922);
-    display: flex;
+.results span {
+    display: inline-flex;
 }
