@@ -45,6 +45,7 @@ h1 {
     border-color: white;
     font-size: 25px;
     font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 
 .open-quiz:hover {
@@ -88,6 +89,7 @@ h1 {
     border-radius: 20px;
     margin-bottom: 10px;
     margin-right: 10px;
+    margin-top: 10px;
     height: 30px;
 }
 
@@ -97,6 +99,7 @@ h1 {
     width: 100px;
     border-radius: 20px;
     margin-bottom: 10px;
+    margin-top: 10px;
     height: 30px;
 }
 
@@ -255,7 +258,7 @@ footer p {
     width: 90%;
     background-color: white;
     border-radius: 20px;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     padding-left: 5%;
     padding-right: 5%;
@@ -263,6 +266,8 @@ footer p {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: none;
 }
 
 .results span {
