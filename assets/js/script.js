@@ -55,6 +55,24 @@ function showQuestions(index){
                     +'<div class="option">'+ questions[index].options[3] +'<span></span></div>';
     que_text.innerHTML = que_tag;
     answer_options.innerHTML = answer_tag;
+    const option = answer_options.querySelectorAll(".option");
+    console.log(option);
+    for (let i = 0; i < option.length; i++) {
+       option[i].setAttribute("onclick", "optionSelected(this)");
+       console.log(option[i]);
+    }   
+}
+
+function optionSelected(answer){
+    let userAns = answer.textContent;
+    let correctAns = questions[que_count].answer;
+    if(userAns ==correctAns){
+        console.log("Correct");
+        answer.classList.add("correct");
+    }else{
+        console.log("Incorrect");
+        answer.classList.add("incorrect");
+    }
 }
 
 function queCounter(index){

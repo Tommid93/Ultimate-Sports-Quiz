@@ -205,6 +205,36 @@ h1 {
     margin-right: 10px;
 }
 
+.option.correct {
+    background-color: rgba(7, 170, 75, 0.922);
+    border: 1px solid rgba(7, 170, 75, 0.922);
+    color: black;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+    margin-right: 10px;
+}
+
+.option.incorrect {
+    background-color: rgba(214, 5, 5, 0.818);
+    border: 1px solid rgba(214, 5, 5, 0.818);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+    margin-right: 10px;
+}
+
 .option:hover {
     background-color: black;
     color: whitesmoke;
