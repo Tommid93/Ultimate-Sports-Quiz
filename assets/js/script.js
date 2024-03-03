@@ -4,6 +4,7 @@ const exitQuizBtn = document.querySelector('.exit-quiz');
 const startScreen = document.querySelector('.start-screen');
 const startQuizBtn = document.querySelector('.start-quiz');
 const quizArea = document.querySelector('.quiz-area');
+const timeCount = quizArea.querySelector('.time-seconds');
 
 const answer_options = document.querySelector(".answer-options");
 
@@ -26,10 +27,13 @@ startQuizBtn.onclick = ()=> {
     quizRules.classList.remove('active');
     showQuestions(0);
     queCounter(1);
+    timerBegin(10);
 }
 
 let que_count = 0;
 let que_numb = 1;
+let counter;
+let timeStart = 10;
 
 const next_ques = quizArea.querySelector(".next-ques");
 
@@ -40,6 +44,8 @@ next_ques.onclick = ()=> {
     que_numb++;
     showQuestions(que_count);
     queCounter(que_numb);
+    clearInterval(counter);
+    timerBegin(10);
     
     }else{
         console.log("Questions Completed")
@@ -66,6 +72,7 @@ function showQuestions(index){
 
 /* Function to identify if the user selects the correct or incorrect answer */
 function optionSelected(answer){
+    clearInterval(counter);
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
     let allOptions = answer_options.children.length;
@@ -86,6 +93,18 @@ function optionSelected(answer){
 /* Will disable all options once a user has selcted their choice of answer */
     for (let i = 0; i < allOptions; i++){
         answer_options.children[i].classList.add("disabled");
+    }
+}
+
+function timerBegin(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timeCount.textContent = time;
+        time --;
+        if(time < 0){
+            clearInterval(counter);
+            timeCount.textContent = "0"; 
+        }
     }
 }
 
