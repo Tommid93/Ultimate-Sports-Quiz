@@ -117,6 +117,7 @@ function showResultBox(){
     quizRules.classList.remove('active');
     result_area.classList.add('active');
     const score = result_area.querySelector('.results-text');
+    userScore.setAttribute("class", "score");
     let scoreTag = '<p>You scored</p>'+ userScore +'<p>Out of 15 Questions</p>';
     score.innerHTML = scoreTag;
 }
