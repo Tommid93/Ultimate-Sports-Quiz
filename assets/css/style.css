@@ -316,7 +316,7 @@ footer p {
 }
 
 /* Styling for quiz on larger screens */
-@media screen and (min-width:992px) {
+@media screen and (min-width:500px) {
     
     .start-screen {
         width: 50%;
@@ -325,15 +325,15 @@ footer p {
     }
 
     .quiz-rules.active{
-        width: 40%;
-        margin-left: 30%;
-        margin-right: 30%;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
         display: flex;
         justify-content: space-between;
     }
     
     .quiz-rules.active button{
-        margin-left: 30px;
+        margin-left: 100px;
         width: 150px;
         height: 40px;
 }
