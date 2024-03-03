@@ -23,16 +23,25 @@ startQuizBtn.onclick = ()=> {
     quizArea.classList.add('active');
     quizRules.classList.remove('active');
     showQuestions(0);
+    queCounter(1);
 }
 
 let que_count = 0;
+let que_numb = 1;
 
 const next_ques = quizArea.querySelector(".next-ques");
 
 /* When next question button clicked - will move to next question */
 next_ques.onclick = ()=> {
+    if(que_count < questions.length - 1){
     que_count++;
+    que_numb++;
     showQuestions(que_count);
+    queCounter(que_numb);
+    
+    }else{
+        console.log("Questions Completed")
+    }
 }
 
 /* Function to get questions from array */
@@ -46,4 +55,10 @@ function showQuestions(index){
                     +'<div class="option">'+ questions[index].options[3] +'<span></span></div>';
     que_text.innerHTML = que_tag;
     answer_options.innerHTML = answer_tag;
+}
+
+function queCounter(index){
+const bottom_ques_counter = quizArea.querySelector(".current-ques");
+let totalQuesCountTag = '<p class="current-ques">'+ index +'</p><p>Of 15 Questions</p>';
+bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
