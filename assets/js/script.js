@@ -34,8 +34,17 @@ let que_count = 0;
 let que_numb = 1;
 let counter;
 let timeStart = 10;
+let userScore = 0;
 
 const next_ques = quizArea.querySelector(".next-ques");
+const result_area = document.querySelector(".results");
+const exit_quiz = result_area.querySelector(".exit-quiz");
+
+/* Exit button at end of quiz will take user to the main page */
+exit_quiz.onclick = () =>{
+    window.location.reload();
+}
+
 
 /* When next question button clicked - will move to next question */
 next_ques.onclick = ()=> {
@@ -46,9 +55,11 @@ next_ques.onclick = ()=> {
     queCounter(que_numb);
     clearInterval(counter);
     timerBegin(10);
+    next_ques.style.display = "none";
     
     }else{
         console.log("Questions Completed")
+        showResultBox();
     }
 }
 
@@ -77,6 +88,8 @@ function optionSelected(answer){
     let correctAns = questions[que_count].answer;
     let allOptions = answer_options.children.length;
     if(userAns ==correctAns){
+        userScore += 1;
+        console.log(userScore);
         console.log("Correct");
         answer.classList.add("correct");
     }else{
@@ -93,9 +106,22 @@ function optionSelected(answer){
 /* Will disable all options once a user has selcted their choice of answer */
     for (let i = 0; i < allOptions; i++){
         answer_options.children[i].classList.add("disabled");
+        next_ques.style.display = "block";
     }
+        
 }
 
+/* Once all questions are completed will show a result box with the users score */
+function showResultBox(){
+    quizArea.classList.remove('active');
+    quizRules.classList.remove('active');
+    result_area.classList.add('active');
+    const score = result_area.querySelector('.results-text');
+    let scoreTag = '<p>You scored</p>'+ userScore +'<p>Out of 15 Questions</p>';
+    score.innerHTML = scoreTag;
+}
+
+/* Timer function that will also force the user to skip to the next question if the timer runs out*/
 function timerBegin(time){
     counter = setInterval(timer, 1000);
     function timer(){
@@ -104,10 +130,24 @@ function timerBegin(time){
         if(time < 0){
             clearInterval(counter);
             timeCount.textContent = "0"; 
+
+            let correctAns = questions[que_count].answer;
+            let allOptions = answer_options.children.length;
+
+            for (let i = 0; i < allOptions; i++) {
+                if(answer_options.children[i].textContent == correctAns){
+                    answer_options.children[i].setAttribute("class", "option correct");
+                }
+            }
+            for (let i = 0; i < allOptions; i++){
+                answer_options.children[i].classList.add("disabled");
+                next_ques.style.display = "block";
+            }
         }
     }
 }
 
+/* Function to change question counter in footer */
 function queCounter(index){
 const bottom_ques_counter = quizArea.querySelector(".current-ques");
 let totalQuesCountTag = '<p class="current-ques">'+ index +'</p><p>Of 15 Questions</p>';
