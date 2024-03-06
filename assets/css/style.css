@@ -316,36 +316,36 @@ footer p {
 }
 
 /* Styling for quiz on larger screens */
-@media screen and (min-width:500px) {
+@media screen and (min-width:800px) {
     
-    .start-screen {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
+.start-screen {
+     width: 50%;
+     margin-left: 25%;
+     margin-right: 25%;
     }
 
-    .quiz-rules.active{
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
-        display: flex;
-        justify-content: space-between;
+.quiz-rules.active{
+     width: 45%;
+     margin-left: 27%;
+     margin-right: 20%;
+     display: flex;
+    justify-content: space-between;
     }
     
-    .quiz-rules.active button{
-        margin-left: 100px;
-        width: 150px;
-        height: 40px;
+ .quiz-rules.active button{
+    margin-left: 50px;
+    width: 150px;
+    height: 40px;
 }
 
 .quiz-area.active{
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .next-ques {
-    margin-left: 150px;
+    margin-left: 250px;
     width: 150px;
     font-size: 17px;
     font-weight:650;
