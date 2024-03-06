@@ -1,5 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # The Ultimate Sports Quiz
 
 ## Introduction
@@ -20,15 +18,15 @@ My project consists of sections. Each one is called upon using javascript at var
 
 ## Start Screen
 On opening the web-page, the user will be greated with the start page. This will consist of the quiz title in the header, a brief introduction to the quiz and then a start button where the user can initiate the quiz. It will also show the users highest score on previous attempts of the quiz that is saved using local storage.
-![Start Screen]()
+![Start Screen](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/start-screen.png)
 
 ## Quiz Rules
 When the user presses the start quiz button, they will be greeted with some basic rules of the quiz. THe user will then have 2 buttons to either exit the quiz or to begin it.
-![Quiz Rules]()
+![Quiz Rules](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/quiz-rules.png)
 
 ## Quiz Page
 Upon selecting the start quiz button, the user will be directed to the actual quiz page and the quiz will begin immediately. The user will be given the question and then faced with 4 possible answers. They will only be able to select one answer and once they have selected, they cannot choose another answer.
-![Quiz Page]()
+![Quiz Page](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/quiz-page.png)
 ## Quiz Page Features
 There are several features to the quiz page that utilises javascript
 
@@ -43,7 +41,7 @@ Once the user has selected an answer or the timer runs out, a next question butt
 
 ## Results Page
 The fourth and final section of this project is the results page. Once the user has completed the final question, the quiz will automatically tally up the correct answers and display the results to the user. The user will then be able to click the exit button where they can return to the main page and start the quiz again if they wish.
-![Results Page]()
+![Results Page](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/results-page.png)
 
 # Testing and Approach to Testing
 When I first began the project, the original approach I was going to take was to complete the basic layout and styling of all the elements and then to write the javascript. However I felt that this made the page messy and more complex to work out as there were elements all over the place. Therefore I decided to change my approach. I knew I had 4 sections so I wrote out the basic html code and styled one section at a time and wrote the javascript along with it. To me this meant that I could break the project down into 4 tasks and could test each task before moving onto the next one. 
@@ -61,7 +59,7 @@ During the entire project I did have several minor bugs that occurred that were 
 
 ## Responsiveness
 I have designed my quiz to work on mobile devices and desktops and the design is responsive to fit both of these.
- ![Responsiveness]()
+ ![Responsiveness](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/responsiveness.png)
 
 # Validation Testing
 HTML - I put my HTML through the W3C Validator and came up with no errors. There were a few minor suggestions, however these did not impact the site at all.
