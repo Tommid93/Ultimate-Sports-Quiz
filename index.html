@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sports Quiz">
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Utlimate Sports Quiz</title>
   </head>
@@ -11,78 +12,75 @@
     <header>
       <h1>The Ultimate Sports Quiz</h1>
     </header>
-    
-    <!--Main Page and button to start quiz-->
-    <div>
-      <div class="start-screen">
-        
-        <p>Do you think you know sport? Are you sure? Then come and take the ultimate sports quiz and let's find out how good you really are!</p>
-        <button class="open-quiz">Start Quiz</button>
-        <p>Highest Score: </p><p class="high-score">0</p>
-      </div>
-      
-      <!--Pop up box with quiz rules-->
-      <div class="quiz-rules">
-        <h2>Quiz Rules</h2>
-        <ol>
-          <li>You will receive 15 questions</li>
-          <li>You will have 10 seconds to answer each question.</li>
-          <li>Once you have selected an answer you cannot turn back</li>
-          <li>If you run out out time it will skip to the next question</li>
-          <li>Good luck!</li>
-        </ol>
-        <div class="button-align">
-        <button class="start-quiz">Start Quiz</button>
-        <button class="exit-quiz">Exit Quiz</button>
+    <main>
+      <!--Main Page and button to start quiz-->
+      <div>
+        <div class="start-screen">
+          <p>Do you think you know sport? Are you sure? Then come and take the ultimate sports quiz and let's find out how good you really are!</p>
+          <button class="open-quiz">Start Quiz</button>
+        </div>
+        <!--Pop up box with quiz rules-->
+        <div class="quiz-rules">
+          <h2>Quiz Rules</h2>
+          <ol>
+            <li>You will receive 15 questions</li>
+            <li>You will have 10 seconds to answer each question.</li>
+            <li>Once you have selected an answer you cannot turn back</li>
+            <li>If you run out out time it will skip to the next question</li>
+            <li>Good luck!</li>
+          </ol>
+          <div class="button-align">
+            <button class="start-quiz">Start Quiz</button>
+            <button class="exit-quiz">Exit Quiz</button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!--Quiz area. The header will contain a time. Section will contain question and answers. Footer will contact buttons-->
-    <div class="quiz-area">
+      <!--Quiz area. The header will contain a time. Section will contain question and answers. Footer will contact buttons-->
+      <div class="quiz-area">
         <header>
           Ultimate Sports Quiz
-      <div class="timer">
-        <div class="time-left">Time left</div>
-        <div class="time-seconds">10</div>
+          <div class="timer">
+            <div class="time-left">Time left</div>
+            <div class="time-seconds">10</div>
+          </div>
+        </header>
+        <section>
+          <div class="questions">
+            <span>Who was the first Formula 1 driver to win 7 world championships?</span>
+          </div>
+          <div class="answer-options">
+            <div class="option">
+              <span>Lewis Hamilton</span>
+            </div>
+            <div class="option">
+              <span>Alain Prost</span>
+            </div>
+            <div class="option">
+              <span>Michael Schumacher</span>
+            </div>
+            <div class="option">
+              <span>Fernando Alonso</span>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p class="current-ques">1</p>
+          <p></p>
+          <button class="next-ques">Next Question</button>
+        </footer>
       </div>
-    </header>
-    <section>
-        <div class="questions">
-          <span>Who was the first Formula 1 driver to win 7 world championships?</span>
-        </div>
-<div class="answer-options">
-  <div class="option">
-    <span>Lewis Hamilton</span>
-  </div>
-  <div class="option">
-    <span>Alain Prost</span>
-  </div>
-  <div class="option">
-    <span>Michael Schumacher</span>
-  </div>
-  <div class="option">
-    <span>Fernando Alonso</span>
-  </div>
-</div>
-    </section>
-    <footer>
-  <p class="current-ques">1</p><p></p>
-        <button class="next-ques">Next Question</button>
-  </footer>
- </div>
-
- <!--Results pop up box-->
-    <div class="results">
+      <!--Results pop up box-->
+      <div class="results">
         <p class="complete-text">Well done you have completed the Ulitmate Sports Quiz!</p>
         <!--This will have the users result using javascript-->
         <div class="results-text">
-        <span>You Scored</span> <p class="score">2</p><span>Questions out of 15 questions correct!</span>
+          <span>You Scored</span> 
+          <p class="score">2</p>
+          <span>Questions out of 15 questions correct!</span>
         </div>
-          <button class="exit-quiz">Exit Quiz</button>
-    </div>
-
-
+        <button class="exit-quiz">Exit Quiz</button>
+      </div>
+    </main>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>
   </body>

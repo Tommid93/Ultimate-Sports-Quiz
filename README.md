@@ -1,12 +1,16 @@
 # The Ultimate Sports Quiz
 
 ## Introduction
-Before I explain my project I wanted to point out that I had already completed 6 months of learning on Javascript before being this course. The interest I had in this is what inspired me to want to take this further. I bring this up as I feel that my coding for this project is a little bit more advanced than a beginner. I came into this project with some good knowledge compared to other types of coding such as Python to which I have no knowledge. 
+Before I explain my project I wanted to point out that I had already completed 6 months of learning on Javascript before being this course. The interest I had in this is what inspired me to want to take this further. I bring this up as I feel that my coding for this project is a little bit more advanced than a beginner. I came into this project with some good knowledge compared to other types of coding such as Python to which I have no knowledge. A lot of my learning during this 6 months came from https://www.w3schools.com/. I also utilised some of the free courses on https://www.codecademy.com/.
 
 I used one of the ideas in the assessment criteria for this project which was to design a quiz game. I felt that there were plenty of features that I could implement that would demonstrate my knowledge of javascript but that would still test me. I wanted the quiz game to be challenging but fun at the same time.
 
 ### Target Audience
 As the name of my project suggests, my target audience for this project is passionate or knowledgable sports fans who wanted to test their knowledge. Originally I was going to complete a general knowledge test, however I decided I wanted to have a more defined target audience which would also help me to create a more specialised design for the project rather than being generic.
+I wanted my users to feel challenged
+I wanted my users to have fun
+I wanted my users to be able to get some educational benefit out of this if they did not know any correct answers
+I wanted my project to be good looking for users.
 
 ### Colour Scheme and Images
 With this being a sports quiz, I wanted the colour scheme to reflect this. I decided I wanted a background image for my project and decided to search for this first as this would actually help decide on the colour scheme.
@@ -48,7 +52,9 @@ When I first began the project, the original approach I was going to take was to
 
 I tested all elements before moving onto the next section and all the features that I set out for work in the way they were supposed to. 
 
-## Bugs
+All elements work as they are designed to.
+
+## Bugs during project
 I came across a few bugs during the process that I had to find a solution for. I will firstly point out that I began my project on codeanywhere. However due to the technical issues I was switched over to Gitpod.
 
 The first 2 bugs I came across were relatively easy fixes and came when I was trying to make the answers show up as green for correct or red for incorrect. THe bug was essentially that when I clicked the answer, nothing was happening. When I used a console log, I determined there were 2 errors. One was that the code couldn't use set.Attribute and the other wouldn't allow a .Add function. One of these issues was actually caused by a variable not being defined and the other was a minor type whereby I had try to add something onto a classlist by failed to use a capital L. Both of these issues were easy fixes once looked at the console logs.
@@ -57,21 +63,36 @@ Another bug I had in the early stages was that in order to hide elements until c
 
 During the entire project I did have several minor bugs that occurred that were all of the same nature. These were essentially typo's or that when using variables later in code, they did not match the way they were oriignally defined causing the console to say variable not defined. All of these issues were fairly easy to fix as they were simply typos.
 
+## Features not used
+### Highscore feature
+I really wanted to add a high score feature which I had been testing and getting tips from my mentor. However although the code seemed correct, the high score would not update where I had placed it. I ran out of time to try and rectify this so I have decided not to have this feature but will look to see where I went wrong once project has been assessed.
+
 ## Responsiveness
 I have designed my quiz to work on mobile devices and desktops and the design is responsive to fit both of these.
  ![Responsiveness](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/responsiveness.png)
 
 # Validation Testing
-HTML - I put my HTML through the W3C Validator and came up with no errors. There were a few minor suggestions, however these did not impact the site at all.
+HTML - I put my HTML through the W3C Validator and came up with no errors. There were a few minor suggestions, however these did not impact the site at all. The slash errors mentioned continue to appear as the editor adds them back in even if deleted. 
+![HTML Validator](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/html-validator.png)
 
 CSS - I put the CSS through the Jigsaw validator and came up with no errors
+![Css Validator](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/css-validator.png)
 
-JScript - I put the javascript through the JShint validator and found no errors - the following metrics were returned:
+JScript - I put the javascript through the JShint validator and found a few small errors/warnings. There were a lot of ES6 warnings, however my mentor explained this is due to me using the latest version of javascript that my not be avaialble to all browsers - the following metrics were returned:
 
-There are 12 functions in this file.
+There are 11 functions in this file.
+
 Function with the largest signature take 1 arguments, while the median is 0.
-Largest function has 14 statements in it, while the median is 5.5.
+
+Largest function has 14 statements in it, while the median is 5.
+
 The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+
+![jshint](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/jshint-validator.png)
+![jshint2](https://github.com/Tommid93/Ultimate-Sports-Quiz/blob/main/assets/images/jshint-validator-questions.png)
+Firstly the warning regarding the unused or undefined questions variable - this error is only appearing due to the fact that I chose to separate the javacscript for the questions and actual game in my project. As there are 15 questions this takes up quite a lot of room and so I felt for ease of finding things in the future it would make sense. These errors/warnings are therefore not valid.
+
+The second issue with the optionSelected not being used. I wrote this code to verify the variable as a string. My mentor has said this is fine it will just bring up a false/positive result on the validator. However it is defined and working correctly as it should.
 
 # Deployment
 Here are the steps I used to deploy my project:
